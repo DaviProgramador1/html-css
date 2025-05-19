@@ -1,29 +1,2 @@
-@charset "UTF-8";
-
-/*
---cor01:bed0f4;
-*/
-
-:root {
-    --cor01:#FFB8B0;
-    --cor02:#FFEFE3;
-    --cor03:#FFEBE3;
-    --cor04:#FFA3BB;
-    --cor05:#FFF4E3;
-}
 
 
-header {
-    background-image: linear-gradient(to bottom, var(--cor01),var(--cor04));
-    color: var(--cor05);
-    max-width:600px;
-    padding-left: 10px;
-    padding-right: 10px;
-    
-    max-height: 500px;
-    padding-top: 40px;
-    
-}
-nav{
-    padding: 10px;
-}
