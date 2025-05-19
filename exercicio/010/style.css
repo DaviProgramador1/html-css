@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(0, 112, 22);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    background-color: yellowgreen;
+    color: chartreuse;
+    
+}
+button{
+    color:rgb(0, 90, 102);
+}
