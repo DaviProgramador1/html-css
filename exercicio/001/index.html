@@ -1,29 +1,113 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <title>Liht Bulb</title>
-    <link rel="stylesheet"href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu Responsivo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      color: white;
+    }
+
+    header {
+      background-color: #191919;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+
+    }
+
+    .menu-toggle {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .menu-toggle span {
+      height: 3px;
+      width: 25px;
+      background: white;
+      margin: 4px 0;
+      transition: 0.4s;
+    }
+
+    nav {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background: #191919;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+      padding: 15px 0;
+      border-top: 1px solid #333;
+    }
+
+    nav.active {
+      display: flex;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 10px 0;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00bfff;
+    }
+
+    /* Optional: smoother transition */
+    nav {
+      transition: all 0.3s ease;
+    }
+  </style>
 </head>
 <body>
+
     
-    <div class="light-bulb">
-    <div class="bulb"></div>
-    <div class="filament"></div>
-    <div class="base"></div>
+
+  <header>
+    <div class="logo">Meu site</div>
+    
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
-    <button id="switch">switch</button>
-    <script src="script.js"></script>
 
-    light-bulb {
-        <width: 100px;></width:>
-        <height: 200px;></height:>
-        <position:relative>
-        <margin 50px auto;></margin>
-    }
-    .bulb {
-        width:
-    }
+    <nav id="nav">
+      <a href="#inicio">Início</a>
+      <a href="#menu">Menu</a>
+      <a href="#avaliacao">Avaliação</a>
+    </nav>
+  </header>
 
-    
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("nav");
+      nav.classList.toggle("active");
+    }
+  </script>
+
 </body>
 </html>
