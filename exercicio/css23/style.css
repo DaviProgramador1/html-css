@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.logo{
+    font-size: 24px;
+  color: #f9a825; /* cor amarela do logo */
+  font-weight: bold;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between; /* distribui logo - links - botão */
+  align-items: center;
+  padding: 10px 40px;
+  background-color: #750d0d;
+}
+
+.menu {
+    display: flex;
+    gap: 48px;
+    position: absolute;
+    left: 40%;
+
+}
+.menu  a {
+    text-decoration: none;
+    color: #FEDBA3;
+    font-weight: 600;
+    list-style: none;
+
+}
+.menu a:hover{
+   color: black;
+} 
+
