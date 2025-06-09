@@ -12,7 +12,7 @@ header{
 
 #nav_logo {
     font-size: 24px;
-    color: #7c0a0f;
+    color: #890e15d5;
 }
 
 #nav_list {
@@ -23,11 +23,13 @@ header{
 
 .nav-item a {
     text-decoration: none;
-    color: #1d1d1dad;
+    color: #0c0101d4;
     font-weight: 600;
 }
 
-.nav-item.active a {
+
+
+.nav-item:hover a {
     color: #0f0000;
     border-bottom:3px solid #7c0a0f;
 }
