@@ -9,19 +9,21 @@
     display: flex;
     flex-direction: column;
     gap: 28px;
-    margin-top: 5%;
+    margin-top: 0;
 }
 
 #cta .title {
-    font-size: 4rem;
+    font-size: clamp(1.5rem, 5vw, 3rem);
     color: #1d1d1d;
+    
 }
 
 #cta .title span{
     color:#890e15d5 ;
 } 
 #cta .description {
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    
 }
 
 #cta_buttons {
@@ -46,4 +48,7 @@
     
 
 }
+
+
+
 

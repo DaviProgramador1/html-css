@@ -1,7 +1,7 @@
 header{
     width: 100%;
     padding: 28px 0%;
-     top:0;
+    top:0;
     position: sticky;
     z-index: 3;
     background-color: #ffffff;
@@ -52,7 +52,7 @@ header{
 
 
 
-@media screen and (max-width:1170px){
+@media screen and (max-width:1387px){
     #nav_list,
     #navbar .btn-default {
         display:none;
@@ -80,6 +80,7 @@ header{
         text-align: center;
     }
 }
+
 
  
   
